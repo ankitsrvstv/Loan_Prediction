@@ -8,12 +8,13 @@
 </head>
 <body>
     <h1>What is applicant credit history?</h1>
-    <p>Enter applicant credit history</p>
+    <p>Choose applicant credit history</p>
     <form action="/" method="POST">
-    <input type="number" name="credithistory" placeholder="enter credit history as 1 or 0">
+    <input type="radio" name="credithistory" value="0">0
+    <input type="radio" name="credithistory" value="1">1
     <input type="submit">
     </form>
-    <p>Approval Status "1" means "YES" and "0" means "NO":</p>
+    <p>Approval Status:</p>
     {{applicant_approval}}
     
 </body>
