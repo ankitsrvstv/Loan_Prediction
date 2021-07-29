@@ -11,6 +11,10 @@ def hello(lp=0):
         credithistory=request.form['credithistory']
         loan_pred=l.loan_prediction(credithistory)
         lp=loan_pred
+        if lp==0:
+            lp='YES'
+        else:
+            lp='NO'
     return render_template("index.html",applicant_approval=lp)
 
 if __name__=="__main__":
